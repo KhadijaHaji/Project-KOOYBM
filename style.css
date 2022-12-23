@@ -33,7 +33,11 @@ header {
 text-decoration: none;
 }
 
-#two>div.image {
-    background-image: url(/images/bgimage.png
-    )  ;
+#three>div.image {
+    width: 100%;
+}
+
+#two{
+    padding: 10rem;
+    background-color: pink
 }
