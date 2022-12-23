@@ -12,6 +12,9 @@ header {
     box-shadow: 0 1px 8px #ddd;
     background-color: #9ffce1;
     text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    
 }
 
 .nav-list {
@@ -33,11 +36,46 @@ header {
 text-decoration: none;
 }
 
+a.nav-links {
+    color: #003153;
+}
+
 #three>div.image {
     width: 100%;
 }
 
 #two{
-    padding: 10rem;
-    background-color: pink
+    padding: 5rem;
+    background-color: #76C8E4;
+    display: flex;
+}
+
+.main-heading {
+    padding-left: 15rem;
+}
+
+.first-heading{
+    font-size: 40px;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.donate-button{
+    margin-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    background-color:#9ffce1;
+    color: #003153;
+    border: none;
+    font-weight: bold;
+    border-radius: 35px;
+}
+
+.donate-button:hover{
+     background-color:#1170ed;
+     color: #f5f7f8;
 }
