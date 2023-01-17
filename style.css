@@ -88,10 +88,23 @@ a.nav-links {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: -1rem;
   background-color: #76c8e4;
+  color: white;
+  font-family: "Inria Sans", sans-serif;
+  padding-top: 3rem ;
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
+.hero > h1.CO {
+font-size: 100px;
+}
+.hero > h2{
+color: #003153;
+}
 .card-container {
   display: flex;
   flex-direction: row;
@@ -120,7 +133,7 @@ a.nav-links {
 }
 
 .usp {
-  color: grey;
+  color: #003153;
   font-size: 22px;
 }
 
@@ -212,7 +225,6 @@ section.five {
 }
 
 /* Payment Card */
-
 
 .creditCardForm {
   background-color: #ffff;
@@ -316,6 +328,7 @@ section.five {
 
 footer nav#footer {
   padding-top: 3rem;
-  background-color: pink;
-  margin-top: 80px;  
+  background-color:#9ffce1;
+  margin-top: 50px;  
+  padding-bottom:10px;
 }
