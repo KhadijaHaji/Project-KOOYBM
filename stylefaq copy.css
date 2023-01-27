@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -40,38 +45,93 @@ a.nav-links {
     color: #003153;
 }
 
-h1{
+h1 {
     font-size: 80px;
-        font-family: "Inria Sans", sans-serif;
-        color: #9ffce1;
-        font-weight: bold;
-        text-align: center;
-}
-
-.collapsible {
-    background-color:#003153;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    margin-top: 60px;
-    
-}
-
-.active,
-.collapsible:hover {
-    background-color: #3f749a;
     font-family: "Inria Sans", sans-serif;
+    color: #9ffce1;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0 30px;
+    text-align: center;
 }
 
-.content {
-    padding: 0 18px;
-    display: none;
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.faq {
+    background-color: #9ffce1;
+    ;
+    border: 1px solid gray;
+    margin: 20px 0;
+    padding: 0px 0px 0px 30px;
+    position: relative;
     overflow: hidden;
+    transition: 0.3s ease;
+    border-radius: 10px;
     font-family: "Inria Sans", sans-serif;
-    
+}
+
+.faq.active {
+    background-color: skyblue;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    margin: 0 35px 0px 0;
+    padding: 30px 30px 20px 20px;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+    font-family: "Inria Sans", sans-serif;
+}
+
+.faq.active .faq-text {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    color: #000;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background: gray;
+}
+
+footer nav#footer {
+    padding-top: 3rem;
+    background-color: #9ffce1;
+    margin-top: 50px;
+    padding-bottom: 10px;
 }
